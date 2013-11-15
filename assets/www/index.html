@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0">
+    <title>Orientation Changer By Vicky Gonsalves</title>
+    <script type="text/javascript" src="cordova-2.4.0.js"></script>
+    <script type="text/javascript" src="OrientationChanger.js"></script>
+    <script>
+        var mode = "portrait";
+        function toggleOrientation() {
+            if (mode == 'portrait') {
+                mode = 'landscape';
+                window.changeOrientation(mode);
+            } else {
+                mode = 'portrait';
+                window.changeOrientation(mode);
+
+            }
+        }
+    </script>
+</head>
+<body>
+<button style="width: 200px; height: 300px;" onclick="toggleOrientation()">Toggle Orientation</button>
+</body>
+</html>
