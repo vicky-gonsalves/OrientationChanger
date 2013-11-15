@@ -5,6 +5,8 @@ Phonegap Plugin for changing orientation
 
 
 Change in your Android Mainfest:
+
+
 <activity
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:windowSoftInputMode="adjustResize|stateHidden"
